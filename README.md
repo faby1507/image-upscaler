@@ -12,3 +12,15 @@ After installing the required dependencies (`pip install torch torchvision pillo
 Takes an image and creates a 4x enlarged copy named `photo_upscaled.jpg` in the same directory.
 ```bash
 python upscale.py photo.jpg
+```
+Usage: python upscale.py [INPUT] [OPTIONS]
+
+Positional Arguments:
+  input                 Path to the input image file or folder to process.
+
+Options:
+  -s, --scale {2,4}     Upscaling factor: 2 or 4 (Default: 4)
+  -m, --mode {photo,anime}
+                        Model mode: photo or anime (Default: photo)
+  -o, --output OUTPUT   Custom path/name for the output file or folder
+  --model-dir PATH      Custom directory to download/look for .pth models
